@@ -1,8 +1,4 @@
-﻿using K205_Examples;
-using System.Security.Cryptography;
-using System.Text;
-
-// 54as54-d51as4d-5a4sd-54a6-sdas54d-6as4-54d5a
+﻿// 54as54-d51as4d-5a4sd-54a6-sdas54d-6as4-54d5a
 // MD5 sifreleme C#-da
 
 //static string Hash(string password)  // string 
@@ -78,12 +74,96 @@ using System.Text;
 ///
 
 
-User user1 = new User();
+//User user1 = new User();
 
-user1.Id = 1;
-user1.Name = "Vahid";
-user1.Surname = "Muradov";
-user1.Password = "1234";
+//user1.Id = 1;
+//user1.Name = "Vahid";
+//user1.Surname = "Muradov";
+//user1.Password = "1234";
 
 
-Console.WriteLine(user1.Hash());
+//Console.WriteLine(user1.Hash());
+
+
+
+//var gun = DateTime.Now;
+
+
+
+//switch (gun.DayOfWeek.ToString())
+//{
+//    case "Monday":
+//        Console.WriteLine("Bazarertesi");
+//        break;
+//    case "Tuesday":
+//        Console.WriteLine("Ceresenbe Axsami");
+//        break;
+//    case "Wednesday":
+//        Console.WriteLine("Ceresenbe");
+//        break;
+//    case "Thursday":
+//        Console.WriteLine("Cume Axsami");
+//        break;
+//    case "Friday":
+//        Console.WriteLine("Cume");
+//        break;
+//    case "Saturday":
+//        Console.WriteLine("Senbe");
+//        break;
+//    default:
+
+//        Console.WriteLine("Bazar");
+
+//        break;
+//}
+
+
+//Console.WriteLine("1. Yeni mehsul daxil edin.");
+//Console.WriteLine("2. Mehsullar.");
+
+
+//string key = Console.ReadLine();
+
+
+
+//switch (Convert.ToUInt32(key))
+//{
+//    case 1:
+//        Console.Write("Mehsul adini daxil edin: ");
+//        string mehsulAdi = Console.ReadLine();
+//        Console.WriteLine(mehsulAdi);
+
+//        break;
+//    case 2:
+//        Console.WriteLine("IPhone, Xiomi");
+//        break;
+//    default:
+
+//        break;
+//}
+
+
+
+//SEO link
+
+
+static void SEOLink(string text)
+{
+    var seo = text.ToLower().Replace(" ", "-")
+                  .Replace("ə", "e")
+                  .Replace("ğ", "g")
+                  .Replace("ç", "c");
+
+    Console.WriteLine(seo);
+}
+
+
+string metn = "GeÇtiĞimiz gün sosyal medya hesabından bir paylaşım yaparak";
+
+
+SEOLink(metn);
+
+
+
+
+
