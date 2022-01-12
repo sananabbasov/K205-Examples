@@ -1,4 +1,8 @@
-﻿// 54as54-d51as4d-5a4sd-54a6-sdas54d-6as4-54d5a
+﻿using K205_Examples;
+
+
+
+// 54as54-d51as4d-5a4sd-54a6-sdas54d-6as4-54d5a
 // MD5 sifreleme C#-da
 
 //static string Hash(string password)  // string 
@@ -71,7 +75,6 @@
 //Console.WriteLine(user3.Name + " " + user3.Password);
 
 //// class
-///
 
 
 //User user1 = new User();
@@ -147,23 +150,50 @@
 //SEO link
 
 
-static void SEOLink(string text)
-{
-    var seo = text.ToLower().Replace(" ", "-")
-                  .Replace("ə", "e")
-                  .Replace("ğ", "g")
-                  .Replace("ç", "c");
+//static void SEOLink(string text)
+//{
+//    var seo = text.ToLower().Replace(" ", "-")
+//                  .Replace("ə", "e")
+//                  .Replace("ğ", "g")
+//                  .Replace("ç", "c");
 
-    Console.WriteLine(seo);
-}
-
-
-string metn = "GeÇtiĞimiz gün sosyal medya hesabından bir paylaşım yaparak";
+//    Console.WriteLine(seo);
+//}
 
 
-SEOLink(metn);
+//string metn = "GeÇtiĞimiz gün sosyal medya hesabından bir paylaşım yaparak";
+
+
+//SEOLink(metn);
 
 
 
 
+
+
+Product telefon = new();
+telefon.Id = 1;
+telefon.Name = "IPhoneX";
+telefon.Description = "Cox bahali telefondu";
+telefon.Price = 59.6M;
+
+
+Product masin = new() { 
+    Id = 2,
+    Name = "Tesla",
+    Description = "Cox yaxsi masindi",
+    Price = 566.5465M
+
+};
+
+Product kompyuter = new() { 
+    Id = 3,
+    Name = "Asus TUF Gaming F17",
+    Description="Agir notbukdu",
+    Price = 2399.99M
+
+};
+
+
+Console.WriteLine(telefon.Name + " " + telefon.EDV() + " " + telefon.SEO());
 

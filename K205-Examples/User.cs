@@ -13,7 +13,7 @@ namespace K205_Examples
         public string Name;
         public string Surname;
         public string Password;
-
+        Product product;
 
 
         public string Hash()
