@@ -173,7 +173,7 @@
 
 Product telefon = new();
 telefon.Id = 1;
-telefon.Name = "IPhoneX";
+telefon.Name = "IPhoneX əəəə";
 telefon.Description = "Cox bahali telefondu";
 telefon.Price = 59.6M;
 
